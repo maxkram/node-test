@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/utils.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
   },
   "author": "maxkram",
   "license": "ISC",
   "dependencies": {
+    "expect": "^1.20.2",
     "mocha": "^3.2.0"
   },
   "devDependencies": {
